@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Nhập / Đăng Ký | Sân Bóng Thắng Lợi</title>
+  <meta name="description" content="Đăng nhập hoặc tạo tài khoản mới để đặt sân bóng đá trực tuyến và theo dõi lịch sử đặt sân tại Sân Bóng Thắng Lợi.">
+</head>
+<body>
+  <header>
+    <p class="site-name"><a href="index.html">Sân Bóng Thắng Lợi</a></p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="san-va-lich.html">Sân &amp; lịch trống</a></li>
+        <li><a href="dat-san.html">Đặt sân</a></li>
+        <li><a href="tai-khoan.html" aria-current="page">Đăng nhập / Đăng ký</a></li>
+        <li><a href="lich-su.html">Lịch sử đặt sân</a></li>
+        <li><a href="quan-tri.html">Quản trị</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Đăng nhập hoặc tạo tài khoản</h1>
+    <p>Tài khoản giúp bạn lưu lịch sử đặt sân, nhận thông báo lịch trống và tích điểm đổi ưu đãi.</p>
+
+    <h2>Đăng nhập</h2>
+    <form action="#" method="post">
+      <label for="dn-email">Email hoặc số điện thoại (*)</label><br>
+      <input type="text" id="dn-email" name="tai_khoan" required><br><br>
+
+      <label for="dn-mat-khau">Mật khẩu (*)</label><br>
+      <input type="password" id="dn-mat-khau" name="mat_khau" required minlength="6"><br><br>
+
+      <button type="submit">Đăng nhập</button>
+    </form>
+
+    <h2>Đăng ký tài khoản mới</h2>
+    <form action="#" method="post">
+      <label for="dk-ho-ten">Họ và tên (*)</label><br>
+      <input type="text" id="dk-ho-ten" name="ho_ten" required minlength="2"><br><br>
+
+      <label for="dk-email">Email (*)</label><br>
+      <input type="email" id="dk-email" name="email" required><br><br>
+
+      <label for="dk-sdt">Số điện thoại (*)</label><br>
+      <input type="tel" id="dk-sdt" name="so_dien_thoai" required pattern="0[0-9]{9}" title="Nhập số điện thoại Việt Nam gồm 10 chữ số, bắt đầu bằng 0"><br><br>
+
+      <label for="dk-mat-khau">Mật khẩu (*)</label><br>
+      <input type="password" id="dk-mat-khau" name="mat_khau" required minlength="6"><br><br>
+
+      <label for="dk-xac-nhan">Xác nhận mật khẩu (*)</label><br>
+      <input type="password" id="dk-xac-nhan" name="xac_nhan_mat_khau" required minlength="6"><br><br>
+
+      <input type="checkbox" id="dk-dong-y" name="dong_y_dieu_khoan" required>
+      <label for="dk-dong-y">Tôi đồng ý với điều khoản sử dụng dịch vụ (*)</label><br><br>
+
+      <button type="submit">Tạo tài khoản</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Sân Bóng Thắng Lợi – 123 Đường Ngô Quyền, Quận Sơn Trà, Đà Nẵng</p>
+    <p>Điện thoại: 0905 123 456 · Email: lienhe@sanbongthangloi.vn</p>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="lien-he.html">Liên hệ</a></li>
+      <li><a href="quan-tri.html">Quản trị</a></li>
+    </ul>
+    <p>&copy; 2026 Sân Bóng Thắng Lợi. Đồ án học phần Lập trình Web.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt Sân Trực Tuyến | Sân Bóng Thắng Lợi</title>
+  <meta name="description" content="Điền thông tin để đặt sân bóng đá trực tuyến tại Sân Bóng Thắng Lợi, chọn loại sân, ngày giờ và phương thức đặt cọc.">
+</head>
+<body>
+  <header>
+    <p class="site-name"><a href="index.html">Sân Bóng Thắng Lợi</a></p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="san-va-lich.html">Sân &amp; lịch trống</a></li>
+        <li><a href="dat-san.html" aria-current="page">Đặt sân</a></li>
+        <li><a href="tai-khoan.html">Đăng nhập / Đăng ký</a></li>
+        <li><a href="lich-su.html">Lịch sử đặt sân</a></li>
+        <li><a href="quan-tri.html">Quản trị</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Đặt sân bóng đá</h1>
+    <p>Vui lòng điền đầy đủ thông tin bên dưới. Các trường có dấu (*) là bắt buộc.
+      Đơn đặt sân sẽ được xác nhận qua số điện thoại hoặc email trong vòng 30 phút.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Thông tin khách hàng</legend>
+
+        <label for="ho-ten">Họ và tên (*)</label><br>
+        <input type="text" id="ho-ten" name="ho_ten" required minlength="2" maxlength="60"><br><br>
+
+        <label for="sdt">Số điện thoại (*)</label><br>
+        <input type="tel" id="sdt" name="so_dien_thoai" required pattern="0[0-9]{9}" title="Nhập số điện thoại Việt Nam gồm 10 chữ số, bắt đầu bằng 0"><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Thông tin đặt sân</legend>
+
+        <label for="loai-san">Loại sân (*)</label><br>
+        <select id="loai-san" name="loai_san" required>
+          <option value="">-- Chọn loại sân --</option>
+          <option value="5">Sân 5 người</option>
+          <option value="7">Sân 7 người</option>
+          <option value="11">Sân 11 người</option>
+        </select><br><br>
+
+        <label for="ngay-dat">Ngày đặt (*)</label><br>
+        <input type="date" id="ngay-dat" name="ngay_dat" required min="2026-09-11"><br><br>
+
+        <label for="gio-bat-dau">Giờ bắt đầu (*)</label><br>
+        <input type="time" id="gio-bat-dau" name="gio_bat_dau" required><br><br>
+
+        <label for="gio-ket-thuc">Giờ kết thúc (*)</label><br>
+        <input type="time" id="gio-ket-thuc" name="gio_ket_thuc" required><br><br>
+
+        <p>Phương thức đặt cọc (*)</p>
+        <input type="radio" id="coc-chuyen-khoan" name="phuong_thuc_coc" value="chuyen_khoan" required>
+        <label for="coc-chuyen-khoan">Chuyển khoản ngân hàng</label><br>
+        <input type="radio" id="coc-tien-mat" name="phuong_thuc_coc" value="tien_mat" required>
+        <label for="coc-tien-mat">Tiền mặt tại sân</label><br><br>
+
+        <label for="ghi-chu">Ghi chú thêm</label><br>
+        <textarea id="ghi-chu" name="ghi_chu" rows="4" cols="40" maxlength="300"></textarea><br><br>
+      </fieldset>
+
+      <button type="submit">Xác nhận đặt sân</button>
+      <button type="reset">Nhập lại</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Sân Bóng Thắng Lợi – 123 Đường Ngô Quyền, Quận Sơn Trà, Đà Nẵng</p>
+    <p>Điện thoại: 0905 123 456 · Email: lienhe@sanbongthangloi.vn</p>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="lien-he.html">Liên hệ</a></li>
+      <li><a href="quan-tri.html">Quản trị</a></li>
+    </ul>
+    <p>&copy; 2026 Sân Bóng Thắng Lợi. Đồ án học phần Lập trình Web.</p>
+  </footer>
+</body>
+</html>
